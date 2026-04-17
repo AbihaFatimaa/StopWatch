@@ -1,0 +1,136 @@
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   margin: 0;
+   min-height: 100vh;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   /* soft calm gradient */
+   background: linear-gradient(135deg, #93b0e5, #cfdef3);
+}
+
+.stopwatch-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.25);
+    max-width: 90%;
+    width: 400px;
+}
+
+#stopwatch {
+    font-size: clamp(32px, 8vw, 56px);
+    letter-spacing: 2px;
+    color: #2a4057;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+/* buttons */
+button {
+    cursor: pointer;
+    padding: 12px 18px;
+
+    background-color: #344b65;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+
+    transition: all 0.25s ease;
+    margin: 5px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+button:hover {
+    background-color: #2d3843;
+    transform: translateY(-2px);
+}
+.app-card {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(47, 28, 122, 0.1);
+}
+.title {
+    font-size: 35px;
+    font-weight: 800;
+    color: #2b3d50;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.subtitle {
+    font-size: 14px;
+    color: #334354;
+    margin-bottom: 15px;
+}
+body.dark {
+   background: linear-gradient(135deg, #000000, #203a43, #2c5364);
+}
+body.dark .stopwatch-container {
+    background: rgba(64, 96, 98, 0.4);
+    border: 1px solid rgba(17, 40, 51, 0.1);
+}
+
+body.dark #stopwatch {
+    color: #ffffff;
+}
+
+body.dark .title,
+body.dark .subtitle {
+    color: #ffffff;
+}
+
+body.dark ul {
+    color: #ffffff;
+}
+#themeToggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+
+    cursor: pointer;
+    background: #4f78a4;
+    color: white;
+    transition: 0.3s;
+}
+
+#themeToggle:hover {
+    background: #52667b;
+}
+@media (max-width: 600px) {
+    .stopwatch-container {
+        padding: 15px;
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+    }
+    .theme-btn{
+        width: auto;
+        display: inline-block;
+    }
+}
