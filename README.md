@@ -2,6 +2,7 @@
 
 A modern, responsive stopwatch built using HTML, CSS, and JavaScript with smooth UI, dark mode, and keyboard controls.
 
+Created using the coddy tech course on creating the stopwatch.
 
 🚀 Live Demo
 
